@@ -1,6 +1,15 @@
 import Head from "next/head";
-import { BrowserRouter } from "react-router-dom";
+import NavBar from "../components/NavBar";
 
 export default function Home() {
-  return <div></div>;
+  return (
+    <div>
+      <Head>
+        <title>ICECREAM</title>
+        <link rel="icon" href="/public/favicon.ico" />
+      </Head>
+      <NavBar />
+      <h2>cooking up ice cream</h2>
+    </div>
+  );
 }
