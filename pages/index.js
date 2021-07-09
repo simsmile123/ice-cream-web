@@ -9,7 +9,6 @@ export default function Home() {
         <link rel="icon" href="/public/favicon.ico" />
       </Head>
       <NavBar />
-      <h2>cooking up ice cream</h2>
     </div>
   );
 }

@@ -1,12 +1,21 @@
+import Image from "next/image";
+import HeaderItem from "./HeaderItem";
+
 function NavBar() {
   return (
-    <header>
+    <header className="">
+      <Image
+        className="object-contain"
+        src="https://ice-cream-assets.s3.amazonaws.com/ice-cream-logo-with-text.png"
+        width={180}
+        height={100}
+      />
       <div>
-        <div>
-          <div>
-            <h1>hi</h1>
-          </div>
-        </div>
+        <HeaderItem title="HOME" />
+        <HeaderItem title="CONES" />
+        <HeaderItem title="BOWLS" />
+        <HeaderItem title="BARS" />
+        <HeaderItem title="ACCOUNTS" />
       </div>
     </header>
   );
